@@ -1,3 +1,5 @@
+import time as timer
+
 class Courser:
     def __init__(self, driver):
         self.driver = driver
@@ -8,7 +10,9 @@ class Courser:
 
     def process(self):
         self.__before_start()
+        timer.sleep(2)
         self.main_func()
+        timer.sleep(2)
         self.__on_finish()
 
     def main_func(self):

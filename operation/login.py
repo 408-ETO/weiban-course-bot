@@ -54,7 +54,7 @@ class AccoutLoginer:
         self.__go_login()
 
     def __go_login(self):
-        timer.sleep(1)
+        timer.sleep(2)
         try:
             # handle popup-msgbox
             alert_bn = self.driver.find_element_by_css_selector(
@@ -62,7 +62,7 @@ class AccoutLoginer:
             self.driver.execute_script('arguments[0].click();', alert_bn)
         except Exception:
             print('login without msgbox-confirm')
-        timer.sleep(1)
+        timer.sleep(2)
         # tap login-button
         login_bn = self.driver.find_element_by_xpath(
             '/html/body/div/div/div/div[3]/div/div[2]/div/div[1]/button/label')
