@@ -1,8 +1,8 @@
 from selenium import webdriver
 import time as timer
 from operation.login import AccoutLoginer as Loginer
-from operation.watchVideo import VideoWatcher
-from operation.pageScroller import PageScroller as Scroll
+from operation.VideoWatcher import VideoWatcher
+from operation.BrowserScroller import PageScroller as Scroll
 
 driver = webdriver.Chrome()
 driver.implicitly_wait(1)
