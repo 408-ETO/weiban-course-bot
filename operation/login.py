@@ -44,7 +44,7 @@ class AccoutLoginer:
         # tab to login with user account and password mode
         self.driver.find_element_by_xpath(
             '/html/body/div/div/div/div[2]/a[2]').click()
-        info = self.info[0:3]
+        info = self.info[:3]
         info.append(self.__handle_code_img())
         # find all input elements
         els = self.driver.find_elements_by_css_selector('.form-item input')
