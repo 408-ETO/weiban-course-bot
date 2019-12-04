@@ -8,7 +8,7 @@ driver = webdriver.Chrome()
 driver.implicitly_wait(1)
 driver.maximize_window()
 
-account = '3018233042'
+account = '3018233060'
 
 # login
 loginer = Loginer(driver=driver, info=['天津大学', account, account])
